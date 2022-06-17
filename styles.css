@@ -17,9 +17,11 @@ html {
   box-sizing: inherit;
 }
 
+
+
 .hero-page {
   width: 100%;
-  height: auto;
+  height: 100vh;
   background-image:
     linear-gradient(to top, #070a0e 0%, rgba(7, 10, 14, 0.2) 25%,rgba(7,10,14,0.1) 60%,rgba(7,10,14,0) 100%),
     linear-gradient(to right,#3b4260 0%,#401d3b 100%);   
@@ -44,6 +46,7 @@ html {
 
 .text-box {
   margin: 6em 0 0 8em;
+  width: 90%;
   height: auto;
 }
 
@@ -81,6 +84,24 @@ html {
   font-size: 1em;
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
+  transition: 0.5s ease;
+}
+
+.btn-box a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.btn-box button:hover {
+  box-shadow: 0 0 30px #555;
+}
+
+.btn-1 a {
+  padding: 0.8em 3.2em;
+}
+
+.btn-2 a {
+  padding: 0.8em 2em;
 }
 
 .btn-1 {
@@ -100,7 +121,57 @@ html {
 }
 
 .main-container img {
-  max-width: 600px;
+  max-width: 500px;
   padding: 30px 0 0 75px;
 }
+
+/* ----- Recent Update Page ----- */
+
+.main-container {
+  height: 100%;
+  background-image:
+  linear-gradient(to top, #070a0e 0%, rgba(7, 10, 14, 0.2) 25%,rgba(7,10,14,0.1) 60%,rgba(7,10,14,0) 100%),
+  linear-gradient(to right,#3b4260 0%,#401d3b 100%); 
+}
+
+.main-container h2 {
+  font-size: 2em;
+}
+
+
+@media only screen and (max-width: 1100px) {
+
+  .text-box {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .text-box h3 {
+    font-size: 1.5em;
+    margin: 1em;
+  }
+
+  .text-box p {
+    font-size: 1em;
+    margin: 2em;
+  }
+
+  .logo {
+    text-align: center;
+  }
+
+  .main-container img {
+    display: none;
+  }
+
+  .btn-box {
+    text-align: center;
+  }
+
+  .btn-box button {
+    margin: 1em;
+  } 
+}
+
+
 
