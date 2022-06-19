@@ -93,7 +93,7 @@ html {
 }
 
 .btn-box button:hover {
-  box-shadow: 0 0 30px #555;
+  box-shadow: 0 0 30px #999;
 }
 
 .btn-1 a {
@@ -122,21 +122,138 @@ html {
 
 .main-container img {
   max-width: 500px;
+  max-height: 500px;
   padding: 30px 0 0 75px;
 }
 
 /* ----- Recent Update Page ----- */
 
-.main-container {
+.main-container-2 {
+  
   height: 100%;
   background-image:
   linear-gradient(to top, #070a0e 0%, rgba(7, 10, 14, 0.2) 25%,rgba(7,10,14,0.1) 60%,rgba(7,10,14,0) 100%),
   linear-gradient(to right,#3b4260 0%,#401d3b 100%); 
 }
 
-.main-container h2 {
-  font-size: 2em;
+.first-section p, 
+.first-section ul li {
+  font-weight: 700;
 }
+
+.title-container {
+  text-align: center;
+  color: #fff;
+}
+
+.title-container h2 {
+  font-size: 2em;
+  padding-top: 1em;
+}
+
+.title-container p {
+  color: #aaa;
+  padding: 1em;
+  font-weight: 700;
+}
+
+.first-section {
+  color: #fff;
+  margin: 1em 10em;
+}
+
+.first-section p {
+  padding: 2em;
+  font-size: 1.1rem;
+}
+
+.first-section h3 {
+  padding: 1em;
+  font-size: 1.5rem;
+}
+
+.first-section ul li {
+  margin: 1em 0 0 2em;
+  font-size: 1.1rem;
+}
+
+.first-section ul li ::marker {
+  unicode-bidi: isolate;
+  font-variant-numeric: tabular-nums;
+  text-transform: none;
+  text-indent: 0px !important;
+  text-align: start !important;
+  text-align-last: start !important;
+}
+
+.calender-img {
+  text-align: center;
+}
+
+.calender-img img {
+  max-width: 600px;
+  margin: 3em;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: #070a0e;
+  color: #fff;
+  padding-top: 10em;
+  padding-bottom: 3em;
+}
+
+.footer-logo {
+  display: flex;
+  flex-direction: column;
+  width: 22em;
+  padding-left: 2em;
+}
+
+.footer-logo h4 {
+  
+  font-size: 2rem;
+}
+
+.footer-logo p {
+  font-weight: 700;
+  padding-top: 2em;
+  color: #aaa;
+}
+
+.social-links p {
+  padding-top: 8em;
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+  padding-right: 4em;
+}
+
+.footer-links a {
+  font-size: 1rem;
+  color: #aaa;
+  text-decoration: none;
+  padding-top: 1.5em;
+  font-weight: 700;
+  transition: 0.25s ease;
+}
+
+.footer-links a:hover {
+  color: #401d3b;
+}
+
+
+
+
+
+
 
 
 @media only screen and (max-width: 1100px) {
@@ -171,6 +288,18 @@ html {
   .btn-box button {
     margin: 1em;
   } 
+}
+
+@media only screen and (max-width: 950px) {
+  .first-section {
+    margin-left: 1em;
+    margin-right: 1em;
+    margin-bottom: 0;
+  }
+
+  .calender-img {
+    display: none;
+  }
 }
 
 
