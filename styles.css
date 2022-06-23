@@ -293,7 +293,7 @@ html {
 }
 
 .main-container-3 {
-  
+  margin-bottom: 10em;
  /* background-image: 
   linear-gradient(
     rgba(56,53,53,0) 0%,
@@ -314,18 +314,77 @@ html {
 }
 
 .box {
-  width: 80vw;
+  width: 70vw;
   height: 7em;
   background-color: rgb(25, 27, 31);
   transition: 0.2s;
   margin: 1px auto 0 auto;
   position: relative;
+  display: flex;
+  align-items: center;
+  padding-left: 1.2em;
 }
+
+.box img {
+  width: 40px;
+}
+
+.coin-name {
+  color: #fff;
+  font-size: 1.2rem;
+  padding-left: 1.5em;
+  width: 6em;
+}
+
+.ticker-symbol {
+  color: #999;
+  font-size: 1.2rem;
+  padding-left: 2em;
+}
+
+
+
+.small-box {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding-left: 3em;
+}
+
+.price-box {
+  width: 8em;
+}
+
+.price-header {
+  font-size: 0.8rem;
+  padding-bottom: 0.8em;
+}
+
+.market-cap-header {
+  font-size: 0.8rem;
+  padding-bottom: 0.8em;
+}
+
+.circ-supply-header {
+  font-size: 0.8rem;
+  padding-bottom: 0.8em;
+}
+
+.bold {
+  font-weight: 700;
+}
+
+
 
 .box-1 {
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   margin: 10em auto 0 auto 
+}
+
+.box-10 {
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .box:hover {
