@@ -17,24 +17,29 @@
 
       <header class="logo">
         <h4>CryptoSpot</h4>
+        <a href="index.html">Back</a>
       </header>
 
       <section class="title-container">
-        <h2>WEN SUNDAY? Thursday!</h2>
-        <p>Written June 16, 2022 by The CryptoSpot Team</p>
+        <h2>About CryptoSpot</h2>
+        <p>Written June 23, 2022 by Alexi Antonatos</p>
       </section>
 
       <section class="first-section">
-        <p>The moment we've all been waiting for is upon us! Below we've laid out the most important 
-          points you need to keep in mind, as well as all the details you need to know about the SundaeSwap 
-          DEX launch in an easy-to-read FAQ format.
+        <p>CryptoSpot is an app with a list of the top 10 cryptocurrencies with live price updates.  
+          The user-interface design was inspired by SundaeSwap.com.  I used HTML, CSS, and 
+          Vanilla JavaScript to build this project.  
         </p>
 
-        <h3>Key Dates and Takeaways</h3>
+        <h3>Issues and how I solved them</h3>
 
         <ul>
           <li>
-            Thursday, January 20: SundaeSwap will launch as a fully-functional beta decentralized exchange (DEX).
+            The first problem was getting the background color to have 2 linear gradients.  One from left to right, and 
+            another from bottom to top.  I quickly realized with CSS only 1 of them would work due to specificity, so I put them together 
+            into the same selector.  It still did not work until I switched the 2 gradients, I put the first one at the bottom and 
+            the one at the bottom I put on top, in the style sheet.  Just like that, it worked.  I believe it was because one of the gradients 
+            has an alpha channel below 1, so it needed to be on the top within the style sheet.
           </li>
           <li>
             Tuesday, January 25: The first round of ISO rewards will be calculated. ISO participants must delegate 
@@ -49,9 +54,7 @@
         </ul>
       </section>
 
-      <div class="calender-img">
-        <img src="wen-sundae-calendar.png" alt="calender" width="600px">
-      </div>
+      
 
     </section>
 
@@ -65,10 +68,6 @@
         </p>
 
         <div class="social-links">
-          <a href="#"><img src="" alt=""></a>
-          <a href="#"><img src="" alt=""></a>
-          <a href="#"><img src="" alt=""></a>
-          <a href="#"><img src="" alt=""></a>
           <p>© 2022 CryptoSpot Labs, Inc. All rights reserved</p>
         </div>
       </div>
@@ -76,7 +75,7 @@
       <div class="footer-links">
         <h5>CryptoSpot</h5>
         <a href="#">Team</a>
-        <a href="#">News & Updates</a>
+        <a href="#">News & </br>Updates</a>
         <a href="#">FAQ</a>
         <a href="#">Tokenomics</a>
       </div>
@@ -86,7 +85,7 @@
         <a href="#">Media Kit</a>
         <a href="#">Whitepaper</a>
         <a href="#">Privacy Policy</a>
-        <a href="#">Terms & Conditions</a>
+        <a href="#">Terms & </br>Conditions</a>
       </div>
 
       <div class="footer-links">
