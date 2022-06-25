@@ -315,20 +315,32 @@ html {
   */
 }
 
-.box {
+
+
+.big-box {
   width: 70vw;
-  height: 7em;
+  height: auto;
   background-color: rgb(25, 27, 31);
   transition: 0.2s;
-  margin: 1px auto 0 auto;
+  
   position: relative;
   display: flex;
-  align-items: center;
+  flex-direction: column;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  margin: 10em auto 0 auto;
   padding-left: 1.2em;
 }
 
-.box img {
+.box {
+  height: 7em;
+  display: flex;
+  align-items: center;
+}
+
+.big-box img {
   width: 40px;
+  height: 40px;
 }
 
 .coin-name {
@@ -372,26 +384,55 @@ html {
   padding-bottom: 0.8em;
 }
 
+.btn {
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  color: #fff;
+  background-color: #3b4260;
+  padding: 0.5em 1em;
+  letter-spacing: 1px;
+}
+
 .bold {
   font-weight: 700;
 }
 
 
 
-.box-1 {
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  margin: 10em auto 0 auto 
+
+
+.btc-dropdown {
+  width: 100%;
+  height: 15em;
+  display: none;
 }
+
+
 
 .box-10 {
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
 
-.box:hover {
+.big-box:hover {
   box-shadow: 0 0 20px rgba(0, 226, 225, 0.6);
   z-index: 1;
+}
+
+
+
+.btc-box {
+  align-items: flex-start;
+  padding-top: 2em;
+  flex-wrap: wrap;
+}
+
+.para-box {
+  color: #fff;
+  font-size: 1.1rem;
+  padding: 1em;
+  width: 70%;
 }
 
 
