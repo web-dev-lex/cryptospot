@@ -12,14 +12,21 @@
     <title>CryptoSpot</title>
   </head>
   <body class="app-body">
+
+    <header class="logo">
+      <h4>CryptoSpot</h4>
+      <a href="index.html">Back</a>
+    </header>
     
     <section class="main-container-3">
      
-      <div class="big-box">
+      <div class="big-box-1 big-box">
         <div class="box-1 box" id="btc">
           <img src="bitcoin-btc.png" alt="bitcoin">
           <h4 class="coin-name">Bitcoin</h4>
-          <h3 class="ticker-symbol first-ticker-symbol">BTC</h3>
+          <div class="ticker-symbol-box">
+            <h3 class="ticker-symbol first-ticker-symbol">BTC</h3>
+          </div>
 
           <div class="price-box small-box">
             <h6 class="price-header">Price</h6>
@@ -37,64 +44,384 @@
           </div>
 
           <div class="info-btn-box small-box">
-            <button class="btn" id="btc-btn">Info</button>
+            <button class="btc-btn btn" id="btn">Info</button>
           </div>
         </div>
       
-        <div class="btc-dropdown" id="btc-dropdown">
-          <p>Bitcoin is a decentralized digital currency that can be transferred on the peer-to-peer bitcoin network.</p>
+        <div class="btc-dropdown dropdown">
+          <p>Bitcoin is a decentralized digital currency that can be transferred 
+            on the peer-to-peer bitcoin network.  Bitcoin transactions are verified 
+            by network nodes through cryptography and recorded in a public 
+            distributed ledger called a blockchain.  The cryptocurrency was 
+            invented in 2008 by an unknown person or group of people using the 
+            name Satoshi Nakamoto.  The currency began use in 2009 when its 
+            implementation was released as open-source software.</p>
         </div>
       </div>
 
-      <!--<div class="box-2 box" id="eth">
-        <img src="ether.png" alt="ethereum">
-        <h4 class="coin-name">Ethereum</h4>
-        <h3 class="ticker-symbol">ETH</h3>
+      <div class="big-box-2 big-box">
+        <div class="box-2 box" id="eth">
+          <img src="ether.png" alt="ethereum">
+          <h4 class="coin-name">Ethereum</h4>
+          <div class="ticker-symbol-box">
+            <h3 class="ticker-symbol">ETH</h3>
+          </div>
 
-        <div class="price-box small-box">
-          <h6 class="price-header">Price</h6>
-          <p class="price bold">$1,000</p>
+          <div class="price-box small-box">
+            <h6 class="price-header">Price</h6>
+            <p class="price bold">$1,000</p>
+          </div>
+
+          <div class="market-cap-box small-box">
+            <h6 class="market-cap-header">Market Capitalization</h6>
+            <p class="market-cap bold">$128,642,601,685</p>
+          </div>
+
+          <div class="circ-supply-box small-box">
+            <h6 class="circ-supply-header">Circulating Supply</h6>
+            <p class="circ-supply bold">121,269,311 ETH</p>
+          </div>
+
+          <div class="info-btn-box small-box">
+            <button class="eth-btn btn" id="btn">Info</button>
+          </div>
         </div>
 
-        <div class="market-cap-box small-box">
-          <h6 class="market-cap-header">Market Capitalization</h6>
-          <p class="market-cap bold">$128,642,601,685</p>
-        </div>
-
-        <div class="circ-supply-box small-box">
-          <h6 class="circ-supply-header">Circulating Supply</h6>
-          <p class="circ-supply bold">121,269,311 ETH</p>
-        </div>
-      </div>
-
-      <div class="box-3 box" id="bin">
-        <img src="bnb-logo.png" alt="bnb logo">
-        <h4 class="coin-name">BNB</h4>
-        <h3 class="ticker-symbol">BNB</h3>
-
-        <div class="price-box small-box">
-          <h6 class="price-header">Price</h6>
-          <p class="price bold">$230</p>
-        </div>
-
-        <div class="market-cap-box small-box">
-          <h6 class="market-cap-header">Market Capitalization</h6>
-          <p class="market-cap bold">$37,484,279,222</p>
-        </div>
-
-        <div class="circ-supply-box small-box">
-          <h6 class="circ-supply-header">Circulating Supply</h6>
-          <p class="circ-supply bold">163,276,975 BNB</p>
+        <div class="eth-dropdown dropdown">
+          <p>Ethereum is a decentralized, open-source blockchain with smart 
+            contract functionality.  Ether is the natice cryptocurrency of 
+            the platform.  Among cryptocurrencies, Ether is second only to 
+            Bitcoin in market capitalization.  Ethereum was conceived in 2013 
+            by programmer Vitalik Buterin.  Ethereum allows anyone to deploy 
+            permanent and immutable decentralized applications onto it, with 
+            which users can interact.
+          </p>
         </div>
       </div>
 
-      <div class="box-4 box"></div>
-      <div class="box-5 box"></div>
-      <div class="box-6 box"></div>
-      <div class="box-7 box"></div>
-      <div class="box-8 box"></div>
-      <div class="box-9 box"></div>
-      <div class="box-10 box"></div>-->
+      <div class="big-box-3 big-box">
+        <div class="box-3 box" id="bin">
+          <img src="bnb-logo.png" alt="bnb logo">
+          <h4 class="coin-name">Binance Coin</h4>
+          <div class="ticker-symbol-box">
+            <h3 class="ticker-symbol">BNB</h3>
+          </div>
+
+          <div class="price-box small-box">
+            <h6 class="price-header">Price</h6>
+            <p class="price bold">$230</p>
+          </div>
+
+          <div class="market-cap-box small-box">
+            <h6 class="market-cap-header">Market Capitalization</h6>
+            <p class="market-cap bold">$37,484,279,222</p>
+          </div>
+
+          <div class="circ-supply-box small-box">
+            <h6 class="circ-supply-header">Circulating Supply</h6>
+            <p class="circ-supply bold">163,276,975 BNB</p>
+          </div>
+
+          <div class="info-btn-box small-box">
+            <button class="bnb-btn btn" id="btn">Info</button>
+          </div>
+        </div>
+
+        <div class="bnb-dropdown dropdown">
+          <p>Binance Coin is the cryptocurrency issued by the Binance 
+            exchange.  BNB was initially based on the Ethereum network but 
+            it is now the native currency of Binance's own blockchain, 
+            the Binance chain.  Binance was created as a utility token for 
+            discounted trading fees in 2017, but its uses have expanded to 
+            numerous applications, including payments for transaction fees, 
+            tracel bookings, entertainment, online services, and financial services.
+          </p>
+        </div>
+      </div>
+
+      <div class="big-box-4 big-box">
+        <div class="box-4 box" id="xrp">
+          <img src="xrp-logo.png" alt="xrp logo">
+          <h4 class="coin-name">Ripple</h4>
+          <div class="ticker-symbol-box">
+            <h3 class="ticker-symbol">XRP</h3>
+          </div>
+
+          <div class="price-box small-box">
+            <h6 class="price-header">Price</h6>
+            <p class="price bold">$0.35</p>
+          </div>
+
+          <div class="market-cap-box small-box">
+            <h6 class="market-cap-header">Market Capitalization</h6>
+            <p class="market-cap bold">$17,304,906,993</p>
+          </div>
+
+          <div class="circ-supply-box small-box">
+            <h6 class="circ-supply-header">Circulating Supply</h6>
+            <p class="circ-supply bold">48,343,101,197 XRP</p>
+          </div>
+
+          <div class="info-btn-box small-box">
+            <button class="xrp-btn btn" id="btn">Info</button>
+          </div>
+        </div>
+
+        <div class="xrp-dropdown dropdown">
+          <p>Ripple is a real-time gross settlement system, currency 
+            exchange and remittance network created by Ripple Labs Inc., 
+            a US-based technology company.  Released in 2012, Ripple is built 
+            upon a distributed open source protocol, and supports tokens 
+            representing fiat currency, cryptocurrency, commodities, or other 
+            units of value such as frequent flier miles or mobile minutes.  
+            The ledger employs the native cryptocurrency known as XRP.
+          </p>
+        </div>
+      </div>
+
+      <div class="big-box-5 big-box">
+        <div class="box-5 box" id="ada">
+          <img src="cardano-logo.png" alt="cardano logo">
+          <h4 class="coin-name">Cardano</h4>
+          <div class="ticker-symbol-box">
+            <h3 class="ticker-symbol">ADA</h3>
+          </div>
+
+          <div class="price-box small-box">
+            <h6 class="price-header">Price</h6>
+            <p class="price bold">$0.48</p>
+          </div>
+
+          <div class="market-cap-box small-box">
+            <h6 class="market-cap-header">Market Capitalization</h6>
+            <p class="market-cap bold">$16,559,367,663</p>
+          </div>
+
+          <div class="circ-supply-box small-box">
+            <h6 class="circ-supply-header">Circulating Supply</h6>
+            <p class="circ-supply bold">33,934,048,406 ADA</p>
+          </div>
+
+          <div class="info-btn-box small-box">
+            <button class="ada-btn btn" id="btn">Info</button>
+          </div>
+        </div>
+
+        <div class="ada-dropdown dropdown">
+          <p>Cardano is a public blockchain platform.  It is open-source 
+            and decentralized, with concensus achieved using proof of stake.  
+            It can facilitate peer-to-peer transactions with its internal 
+            cryptocurrency, ADA.  Cardano was founded in 2015 by Ethereum 
+            co-founder Charles hoskinson.  It is the largest cryptocurrency 
+            to use a proof-of-stake blockchain, which is seen as a greener 
+            alternatice to proof-of-work protocols.
+          </p>
+        </div>
+      </div>
+
+      <div class="big-box-6 big-box">
+        <div class="box-6 box" id="sol">
+          <img src="solana-logo.png" alt="solana logo">
+          <h4 class="coin-name">Solana</h4>
+          <div class="ticker-symbol-box">
+            <h3 class="ticker-symbol">SOL</h3>
+          </div>
+
+          <div class="price-box small-box">
+            <h6 class="price-header">Price</h6>
+            <p class="price bold">$40</p>
+          </div>
+
+          <div class="market-cap-box small-box">
+            <h6 class="market-cap-header">Market Capitalization</h6>
+            <p class="market-cap bold">$13,911,157,609</p>
+          </div>
+
+          <div class="circ-supply-box small-box">
+            <h6 class="circ-supply-header">Circulating Supply</h6>
+            <p class="circ-supply bold">342,637,882 SOL</p>
+          </div>
+
+          <div class="info-btn-box small-box">
+            <button class="sol-btn btn" id="btn">Info</button>
+          </div>
+        </div>
+
+        <div class="sol-dropdown dropdown">
+          <p>Solana is a public blockchain platform with smart contract 
+            functionality.  Solana was proposed in a white paper published 
+            by Anatoly Yakovenko in November of 2017.  This paper described 
+            a technique called "proof of history".  Its native cryptocurrency is SOL, on March, 16 
+            2020, Solana's first block was created.  Solana achieves consensus 
+            using a proof-of-stake mechanism and a "proof-of-history" mechanism.  
+          </p>
+        </div>
+      </div>
+
+      <div class="big-box-7 big-box">
+        <div class="box-7 box" id="doge">
+          <img src="dogecoin-logo.png" alt="dogecoin logo">
+          <h4 class="coin-name">Dogecoin</h4>
+          <div class="ticker-symbol-box">
+            <h3 class="ticker-symbol">DOGE</h3>
+          </div>
+
+          <div class="price-box small-box">
+            <h6 class="price-header">Price</h6>
+            <p class="price bold">$0.06</p>
+          </div>
+
+          <div class="market-cap-box small-box">
+            <h6 class="market-cap-header">Market Capitalization</h6>
+            <p class="market-cap bold">$8,947,615,758</p>
+          </div>
+
+          <div class="circ-supply-box small-box">
+            <h6 class="circ-supply-header">Circulating Supply</h6>
+            <p class="circ-supply bold">132,670,764,300 DOGE</p>
+          </div>
+
+          <div class="info-btn-box small-box">
+            <button class="doge-btn btn" id="btn">Info</button>
+          </div>
+        </div>
+
+        <div class="doge-dropdown dropdown">
+          <p>Dogecoin is a cryptocurrency created by software engineers 
+            Billy Markus and Jackson Palmer, who decided to create a payment 
+            system as a "joke", making fun of the wild speculation in cryptocurrencies 
+            at the time.  It was introduced on December 6, 2013, and quickly 
+            developed its own online community.  It is considered the first 
+            "meme" coin, despite its satirical nature, 
+            some consider it a legitimate investment prospect.  Dogecoin 
+            features the face of the Shiba Inu dog form the "doge" meme as its 
+            logo and namesake.
+          </p>
+        </div>
+      </div>
+
+      <div class="big-box-8 big-box">
+        <div class="box-8 box" id="dot">
+          <img src="polkadot-logo.png" alt="polkadot logo">
+          <h4 class="coin-name">Polkadot</h4>
+          <div class="ticker-symbol-box">
+            <h3 class="ticker-symbol">DOT</h3>
+          </div>
+
+          <div class="price-box small-box">
+            <h6 class="price-header">Price</h6>
+            <p class="price bold">$8.14</p>
+          </div>
+
+          <div class="market-cap-box small-box">
+            <h6 class="market-cap-header">Market Capitalization</h6>
+            <p class="market-cap bold">$8,027,430,164</p>
+          </div>
+
+          <div class="circ-supply-box small-box">
+            <h6 class="circ-supply-header">Circulating Supply</h6>
+            <p class="circ-supply bold">987,579,315 DOT</p>
+          </div>
+
+          <div class="info-btn-box small-box">
+            <button class="dot-btn btn" id="btn">Info</button>
+          </div>
+        </div>
+
+        <div class="dot-dropdown dropdown">
+          <p>Polkadot is an open source blockchain platform and cryptocurrency.  
+            The protocol was created by Ethereum co-founder Gavin Wood.  
+            It provides interconnectivity and interoperability betwenn blockchains, 
+            by enabling independent chains to securely exchange messages and 
+            perform transactions with each other without a trused third-party.  
+            This allows for cross-chain transfers of data or assets, between 
+            different blockchains, and for cross-chain DApps (decentralized 
+            applications) to be build using the Polkadot Network.
+          </p>
+        </div>
+      </div>
+
+      <div class="big-box-9 big-box">
+        <div class="box-9 box" id="shib">
+          <img src="shibaInu-logo.png" alt="shibaInu logo">
+          <h4 class="coin-name">Shiba Inu</h4>
+          <div class="ticker-symbol-box">
+            <h3 class="ticker-symbol">SHIB</h3>
+          </div>
+
+          <div class="price-box small-box">
+            <h6 class="price-header">Price</h6>
+            <p class="price bold">$0.000011</p>
+          </div>
+
+          <div class="market-cap-box small-box">
+            <h6 class="market-cap-header">Market Capitalization</h6>
+            <p class="market-cap bold">$5,995,576,688</p>
+          </div>
+
+          <div class="circ-supply-box small-box">
+            <h6 class="circ-supply-header">Circulating Supply</h6>
+            <p class="circ-supply bold">549,063,278,302 SHIB</p>
+          </div>
+
+          <div class="info-btn-box small-box">
+            <button class="shib-btn btn" id="btn">Info</button>
+          </div>
+        </div>
+
+        <div class="shib-dropdown dropdown">
+          <p>Shiba Inu token is a decentralized cryptocurrency created in 
+            August 2020 by an anonymous person or group known as "Ryoshi".  
+            It is named after the Shiba Inu, a Japanese breed of dog.  
+            Shiba Inu has been characterized as a "meme coin" and a pump 
+            and dump scheme.  There have also been concerns about the 
+            concentration of the coin with a single "whale" wallet controlling 
+            billions of dollars' worth of the token, and frenzied buying by 
+            retail investors motivated by fear of missing out (FOMO).
+          </p>
+        </div>
+      </div>
+
+      <div class="big-box-10 big-box">
+        <div class="box-10 box" id="trx">
+          <img src="tron-logo.png" alt="Tron logo">
+          <h4 class="coin-name">TRON</h4>
+          <div class="ticker-symbol-box">
+            <h3 class="ticker-symbol">TRX</h3>
+          </div>
+
+          <div class="price-box small-box">
+            <h6 class="price-header">Price</h6>
+            <p class="price bold">$0.064</p>
+          </div>
+
+          <div class="market-cap-box small-box">
+            <h6 class="market-cap-header">Market Capitalization</h6>
+            <p class="market-cap bold">$5,995,576,688</p>
+          </div>
+
+          <div class="circ-supply-box small-box">
+            <h6 class="circ-supply-header">Circulating Supply</h6>
+            <p class="circ-supply bold">92,500,922,683 TRX</p>
+          </div>
+
+          <div class="info-btn-box small-box">
+            <button class="tron-btn btn" id="btn">Info</button>
+          </div>
+        </div>
+
+        <div class="tron-dropdown dropdown">
+          <p>TRON is a decentralized, open-source blockchain-based operating 
+            system with a smart contract functionality, proof-of-stake 
+            principles as its consesus algorithm and a cryptocurrency native 
+            to the system, known as Tronix (TRX).  It was established in March 2014 
+            by Justin Sun and since 2017 has been overseen and supervised by 
+            the TRON Foundation, a non-profit organization in Singapore.  It 
+            was originally an Ethereum-based ERC-20 token, which switched its 
+            protocol to its own blockchain in 2018.
+          </p>
+        </div>
+      </div>
 
       
     </section>
