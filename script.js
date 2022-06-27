@@ -9,84 +9,105 @@ let value = true;
 
 function btcDropDown() {
   let btcDropinfo = document.querySelector('.btc-dropdown');
+  let btcBtn = document.querySelector('.btc-btn');
   
   if (value === true) {
     btcDropinfo.style.display = "flex";
+    btcBtn.style.cssText = "background-color: #f9f9f9; color: #000;";
     value = false;
   } else {
     btcDropinfo.style.display = "none";
+    btcBtn.style.cssText = "background-color: #3b4260; color: #fff;"
     value = true;
   }
 }
 
 function ethDropDown() {
   let ethDropinfo = document.querySelector('.eth-dropdown');
+  let ethBtn = document.querySelector('.eth-btn');
 
   if (value === true) {
     ethDropinfo.style.display = "flex";
+    ethBtn.style.cssText = "background-color: #f9f9f9; color: #000;";
     value = false;
   } else {
     ethDropinfo.style.display = "none";
+    ethBtn.style.cssText = "background-color: #3b4260; color: #fff;"
     value = true;
   }
 }
 
 function bnbDropDown() {
   let bnbDropinfo = document.querySelector('.bnb-dropdown');
+  let bnbBtn = document.querySelector('.bnb-btn');
 
   if (value === true) {
     bnbDropinfo.style.display = "flex";
+    bnbBtn.style.cssText = "background-color: #f9f9f9; color: #000;";
     value = false;
   } else {
     bnbDropinfo.style.display = "none";
+    bnbBtn.style.cssText = "background-color: #3b4260; color: #fff;"
     value = true;
   }
 }
 
 function xrpDropDown() {
   let xrpDropinfo = document.querySelector('.xrp-dropdown');
+  let xrpBtn = document.querySelector('.xrp-btn');
 
   if (value === true) {
     xrpDropinfo.style.display = "flex";
+    xrpBtn.style.cssText = "background-color: #f9f9f9; color: #000;";
     value = false;
   } else {
     xrpDropinfo.style.display = "none";
+    xrpBtn.style.cssText = "background-color: #3b4260; color: #fff;"
     value = true;
   }
 }
 
 function adaDropDown() {
   let adaDropinfo = document.querySelector('.ada-dropdown');
+  let adaBtn = document.querySelector('.ada-btn');
 
   if (value === true) {
     adaDropinfo.style.display = "flex";
+    adaBtn.style.cssText = "background-color: #f9f9f9; color: #000;";
     value = false;
   } else {
     adaDropinfo.style.display = "none";
+    adaBtn.style.cssText = "background-color: #3b4260; color: #fff;"
     value = true;
   }
 }
 
 function solDropDown() {
   let solDropinfo = document.querySelector('.sol-dropdown');
+  let solBtn = document.querySelector('.sol-btn');
 
   if (value === true) {
     solDropinfo.style.display = "flex";
+    solBtn.style.cssText = "background-color: #f9f9f9; color: #000;";
     value = false;
   } else {
     solDropinfo.style.display = "none";
+    solBtn.style.cssText = "background-color: #3b4260; color: #fff;"
     value = true;
   }
 }
 
 function dogeDropDown() {
   let dogeDropinfo = document.querySelector('.doge-dropdown');
+  let dogeBtn = document.querySelector('.doge-btn');
 
   if (value === true) {
     dogeDropinfo.style.display = "flex";
+    dogeBtn.style.cssText = "background-color: #f9f9f9; color: #000;";
     value = false;
   } else {
     dogeDropinfo.style.display = "none";
+    dogeBtn.style.cssText = "background-color: #3b4260; color: #fff;"
     value = true;
   }
 }
