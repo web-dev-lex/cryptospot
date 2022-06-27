@@ -42,14 +42,17 @@
             has an alpha channel below 1, so it needed to be on the top within the style sheet.
           </li>
           <li>
-            Tuesday, January 25: The first round of ISO rewards will be calculated. ISO participants must delegate 
-            ADA to qualifying ISO Scoopers prior to 21:45 UTC on January 25th to be able to earn SUNDAE for all five 
-            ISO rounds. See below for more details.
+            Another issue was making the app page responsive.  I had the containers built in a way I couldn't use flex wrap 
+            and I did not want to change the format of it.  So I went with hiding the other elements as the screen gets smaller 
+            until there is the name of the coin and the price of it left.
           </li>
           <li>
-            Thursday, January 20: Yield farming SUNDAE rewards begin. Yield farming will be available for at least 
-            the first six months of the SundaeSwap DEX, and during this period, LP tokens staked to yield farming 
-            contracts in eligible pools can earn additional SUNDAE rewards. See below for more details.
+            The final problem was the most difficult, I had to use javascript to make the drop down box when the info button 
+            is clicked.  I was able to make the box and paragraph appear with appending it within a function, but I could not 
+            remove the paragraph when the box disappeared.  I figured out I needed a truthy/falsey values to get the box and 
+            paragraph to appear and disappear on each click.  So I set a variable to true, then each time the button is clicked, 
+            the value is changed to false, and vice versa.  This allows me to use an if...else statement to show and hide the box 
+            and paragraph on each click. 
           </li>
         </ul>
       </section>
