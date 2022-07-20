@@ -5,7 +5,7 @@
 
 let value = true;
 
-// functions for dropdown info
+// functions for dropdown info and changes color of button when clicked
 
 function btcDropDown() {
   let btcDropinfo = document.querySelector('.btc-dropdown');
