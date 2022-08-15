@@ -1,12 +1,12 @@
 
 
  
-// a true/false statement to be used in conjuction with functions
-
+// A true/false statement to be used in conjuction with functions
 let value = true;
 
-// functions for dropdown info and changes color of button when clicked
+// Functions for dropdown info and changes color of button when clicked
 
+// Bitcoin
 function btcDropDown() {
   let btcDropinfo = document.querySelector('.btc-dropdown');
   let btcBtn = document.querySelector('.btc-btn');
@@ -22,6 +22,7 @@ function btcDropDown() {
   }
 }
 
+// Ethereum
 function ethDropDown() {
   let ethDropinfo = document.querySelector('.eth-dropdown');
   let ethBtn = document.querySelector('.eth-btn');
@@ -37,6 +38,7 @@ function ethDropDown() {
   }
 }
 
+// Binance
 function bnbDropDown() {
   let bnbDropinfo = document.querySelector('.bnb-dropdown');
   let bnbBtn = document.querySelector('.bnb-btn');
@@ -52,6 +54,7 @@ function bnbDropDown() {
   }
 }
 
+// Ripple
 function xrpDropDown() {
   let xrpDropinfo = document.querySelector('.xrp-dropdown');
   let xrpBtn = document.querySelector('.xrp-btn');
@@ -67,6 +70,7 @@ function xrpDropDown() {
   }
 }
 
+// Cardano
 function adaDropDown() {
   let adaDropinfo = document.querySelector('.ada-dropdown');
   let adaBtn = document.querySelector('.ada-btn');
@@ -82,6 +86,7 @@ function adaDropDown() {
   }
 }
 
+// Solana
 function solDropDown() {
   let solDropinfo = document.querySelector('.sol-dropdown');
   let solBtn = document.querySelector('.sol-btn');
@@ -97,6 +102,7 @@ function solDropDown() {
   }
 }
 
+// Dogecoin
 function dogeDropDown() {
   let dogeDropinfo = document.querySelector('.doge-dropdown');
   let dogeBtn = document.querySelector('.doge-btn');
@@ -112,6 +118,7 @@ function dogeDropDown() {
   }
 }
 
+// Polkadot
 function dotDropDown() {
   let dotDropinfo = document.querySelector('.dot-dropdown');
   let dotBtn = document.querySelector('.dot-btn');
@@ -127,6 +134,7 @@ function dotDropDown() {
   }
 }
 
+// Shiba Inu
 function shibDropDown() {
   let shibDropinfo = document.querySelector('.shib-dropdown');
   let shibBtn = document.querySelector('.shib-btn');
@@ -142,6 +150,7 @@ function shibDropDown() {
   }
 }
 
+// Tron
 function tronDropDown() {
   let tronDropinfo = document.querySelector('.tron-dropdown');
   let tronBtn = document.querySelector('.tron-btn');
@@ -157,40 +166,51 @@ function tronDropDown() {
   }
 }
 
-// event listeners for each drop down info button
+// Event listeners for each drop down info button
 
+// Bitcoin
 let btcBtn = document.querySelector('.btc-btn');
 btcBtn.addEventListener("click", btcDropDown);
 
+// Ethereum
 let ethBtn = document.querySelector('.eth-btn');
 ethBtn.addEventListener("click", ethDropDown);
 
+// Binance
 let bnbBtn = document.querySelector('.bnb-btn');
 bnbBtn.addEventListener("click", bnbDropDown);
 
+// Ripple
 let xrpBtn = document.querySelector('.xrp-btn');
 xrpBtn.addEventListener("click", xrpDropDown);
 
+// Cardano
 let adaBtn = document.querySelector('.ada-btn');
 adaBtn.addEventListener("click", adaDropDown);
 
+// Solana
 let solBtn = document.querySelector('.sol-btn');
 solBtn.addEventListener("click", solDropDown);
 
+// Dogecoin
 let dogeBtn = document.querySelector('.doge-btn');
 dogeBtn.addEventListener("click", dogeDropDown);
 
+// Polkadot
 let dotBtn = document.querySelector('.dot-btn');
 dotBtn.addEventListener("click", dotDropDown);
 
+// Shiba Inu
 let shibBtn = document.querySelector('.shib-btn');
 shibBtn.addEventListener("click", shibDropDown);
 
+// Tron
 let tronBtn = document.querySelector('.tron-btn');
 tronBtn.addEventListener("click", tronDropDown);
 
-// websockets for live price data
+// Websockets for live price data
 
+// Bitcoin
 let ws1 = new WebSocket('wss://stream.binance.us:9443/ws/btcusd@trade');
 let btcPriceElement = document.getElementById('btc-price');
 
@@ -199,7 +219,7 @@ ws1.onmessage = (event) => {
   btcPriceElement.innerText = `$${parseFloat(btcObject.p).toFixed(2)}`;
 }
 
-
+// Ethereum
 let ws2 = new WebSocket('wss://stream.binance.us:9443/ws/ethusd@trade');
 let ethPriceElement = document.getElementById('eth-price');
 
@@ -208,7 +228,7 @@ ws2.onmessage = (event) => {
   ethPriceElement.innerText = `$${parseFloat(ethObject.p).toFixed(2)}`;
 }
 
-
+// Binance Coin
 let ws3 = new WebSocket('wss://stream.binance.us:9443/ws/bnbusd@trade');
 let bnbPriceElement = document.getElementById('bnb-price');
 
@@ -217,7 +237,7 @@ ws3.onmessage = (event) => {
   bnbPriceElement.innerText = `$${parseFloat(bnbObject.p).toFixed(2)}`;
 }
 
-
+// Ripple
 let ws4 = new WebSocket('wss://stream.binance.us:9443/ws/xrpusd@trade');
 let xrpPriceElement = document.getElementById('xrp-price');
 
@@ -226,7 +246,7 @@ ws4.onmessage = (event) => {
   xrpPriceElement.innerText = `$${parseFloat(xrpObject.p).toFixed(3)}`;
 }
 
-
+//Cardano
 let ws5 = new WebSocket('wss://stream.binance.us:9443/ws/adausd@trade');
 let adaPriceElement = document.getElementById('ada-price');
 
@@ -235,7 +255,7 @@ ws5.onmessage = (event) => {
   adaPriceElement.innerText = `$${parseFloat(adaObject.p).toFixed(4)}`;
 }
 
-
+// Solana
 let ws6 = new WebSocket('wss://stream.binance.us:9443/ws/solusd@trade');
 let solPriceElement = document.getElementById('sol-price');
 
@@ -244,7 +264,7 @@ ws6.onmessage = (event) => {
   solPriceElement.innerText = `$${parseFloat(solObject.p).toFixed(2)}`;
 }
 
-
+// Dogecoin
 let ws7 = new WebSocket('wss://stream.binance.us:9443/ws/dogeusd@trade');
 let dogePriceElement = document.getElementById('doge-price');
 
@@ -253,7 +273,7 @@ ws7.onmessage = (event) => {
   dogePriceElement.innerText = `$${parseFloat(dogeObject.p).toFixed(3)}`;
 }
 
-
+// Polkapot
 let ws8 = new WebSocket('wss://stream.binance.us:9443/ws/dotusd@trade');
 let dotPriceElement = document.getElementById('dot-price');
 
@@ -262,7 +282,7 @@ ws8.onmessage = (event) => {
   dotPriceElement.innerText = `$${parseFloat(dotObject.p).toFixed(2)}`;
 }
 
-
+// Shiba Inu
 let ws9 = new WebSocket('wss://stream.binance.us:9443/ws/shibusd@trade');
 let shibPriceElement = document.getElementById('shib-price');
 
@@ -271,7 +291,7 @@ ws9.onmessage = (event) => {
   shibPriceElement.innerText = `$${parseFloat(shibObject.p).toFixed(6)}`;
 }
 
-
+// Tron
 let ws10 = new WebSocket('wss://stream.binance.us:9443/ws/trxusd@trade');
 let trxPriceElement = document.getElementById('trx-price');
 
